@@ -1,5 +1,12 @@
+/*
+set variables for repeating values */
 :root {
     --heading-text-color:hwb(0 4% 93%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 main {
