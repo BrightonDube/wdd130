@@ -22,6 +22,11 @@ aside img {
     width: 200px;
     height: auto;
 }
+aside h2 {
+    position: relative;
+    top: 30px;
+
+}
 
 main img {
     float:right;
@@ -62,8 +67,3 @@ h1 {
 }
 
 /* ID Selectors */
-#country {
-    position: relative;
-    top: 30px;
-
-}
