@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+set variables for repeating values */
+:root {
+    --heading-text-color:hwb(0 4% 93%);
+}
+
+main {
+    max-width: 840px;
+}
+aside {
+    width: 50em;   
+    text-align: center;
+    position: relative;
+}
+aside img {
+    width: 200px;
+    height: auto;
+}
+aside h2 {
+    position: relative;
+    top: 30px;
+
+}
+
+main img {
+    float:right;
+    width: 150px;
+    height: auto;
+}
+
+
+p {
+    padding:0;
+}
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #000 ;
+    text-align: center;
+}
+nav {
+    margin-bottom: 20px;
+}
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    /* color: #000; */
+}
+h1 {
+   color:#000;
+    
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #ddd;
+    color:var(--heading-text-color);
+    max-width: 640px;
+}
+
+/* ID Selectors */
