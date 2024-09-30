@@ -1,24 +1,20 @@
-/*
-set variables for repeating values */
-:root {
-    --heading-text-color:hwb(0 4% 93%);
-}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*
+set variables for repeating values */
+:root {
+    --heading-text-color:hwb(0 4% 93%);
+}
+
 main {
     max-width: 840px;
 }
 aside {
-    width: 50rem;
-    margin: 1rem;
-    border: 1px solid rgba(0.2, 0.3, 0.2);
-    padding: 1rem;
-    background-color: #fff;
-    color: var(--heading-text-color);
+    width: 20em;   
     text-align: center;
 }
 aside img {
@@ -50,8 +46,14 @@ h1 {
    color:#000;
     
 }
-.h21 {
-    color: #8e2222;
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #ddd;
+    color:var(--heading-text-color);
 }
 .h2 {
     text-transform: capitalize;
