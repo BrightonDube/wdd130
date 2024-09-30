@@ -1,3 +1,7 @@
+:root {
+    --heading-text-color:hwb(0 4% 93%);
+}
+
 main {
     max-width: 840px;
 }
@@ -7,7 +11,7 @@ aside {
     border: 1px solid rgba(0.2, 0.3, 0.2);
     padding: 1rem;
     background-color: #fff;
-    color: hwb(0 0% 75%);
+    color: var(--heading-text-color);
     text-align: center;
 }
 aside img {
@@ -33,9 +37,18 @@ nav {
 nav a {
     margin-right: 10px;
     text-decoration: none;
-    color: #000;
+    /* color: #000; */
 }
 h1 {
    color:#000;
     
+}
+.h21 {
+    color: #8e2222;
+}
+.h2 {
+    text-transform: capitalize;
+}
+.active {
+    color: #f00;
 }
