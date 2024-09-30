@@ -23,6 +23,7 @@ aside img {
 }
 
 main img {
+    float:right;
     width: 150px;
     height: auto;
 }
@@ -54,6 +55,7 @@ h1 {
     padding: 1rem;
     background-color: #ddd;
     color:var(--heading-text-color);
+    max-width: 640px;
 }
 .h2 {
     text-transform: capitalize;
