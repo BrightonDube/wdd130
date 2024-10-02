@@ -6,11 +6,29 @@
 --air-force-blue: #568ea3ff;
 --cerulean: #4281a4ff;
 }
-
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+header {
+    background-color: var(--mountbatten-pink);
+    color: var(--ecru);
+    padding: 20px;
+    text-align: center;
+}
+
 h1, h2, h3, h4, h5, h6 { 
     font-family: 'Roboto', sans-serif; 
+    color: var(--black-olive);
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+footer { 
+    background-color: var(--cerulean);
+    color: var(--ecru);
+    padding: 20px;
+    text-align: center;
 }
