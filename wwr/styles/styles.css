@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* CSS HEX */
-:root { --black-olive: #37392eff;
---mountbatten-pink: #987284ff;
---ecru: #d8c99bff;
---air-force-blue: #568ea3ff;
---cerulean: #4281a4ff;
+:root {
+    --black-olive: rgba(55, 57, 46, 1);
+    --mountbatten-pink: rgba(152, 114, 132, 1);
+    --ecru: 216, 201, 155;
+    --air-force-blue: 86, 142, 163;
+    --cerulean: 66, 129, 164;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+main {
+    max-width: 80%;
+    margin: 0 auto;
 }
 header {
     background-color: var(--mountbatten-pink);
@@ -17,10 +23,40 @@ header {
     padding: 20px;
     text-align: center;
 }
+.hero {   
+    position: relative;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hero h1 {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    background-color: rgba(var(--ecru), 0.6); /* 50% opacity */
+}
+.hero article {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
 
+    background-color: rgba(var(--air-force-blue), 0.7); /* 50% opacity */
+}
+.hero article img {
+    width: 200px;
+    float: right;
+}
 h1, h2, h3, h4, h5, h6 { 
     font-family: 'Roboto', sans-serif; 
     color: var(--black-olive);
+    margin-top: 30px;
 }
 p {
     font-family: 'Montserrat', sans-serif;
@@ -31,4 +67,7 @@ footer {
     color: var(--ecru);
     padding: 20px;
     text-align: center;
+}
+footer a { 
+    text-decoration: none;
 }
