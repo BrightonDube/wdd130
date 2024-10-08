@@ -18,10 +18,13 @@ main {
     margin: 0 auto;
 }
 header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr;
+    align-items: center;
     background-color: var(--mountbatten-pink);
     color: var(--ecru);
-    padding: 20px;
-    text-align: center;
+    max-width: 1000px;
 }
 .hero {   
     position: relative;
