@@ -140,11 +140,13 @@ figure {
     padding: 5px;
     max-width: 220px;
     margin: auto;
+    aspect-ratio: 1 / 1; /* Ensures the figure is a square */
 }
 
 figure img {
-    max-width: 220px;
-    max-height: 150px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire figure without losing aspect ratio */
 }
 
 figcaption {
