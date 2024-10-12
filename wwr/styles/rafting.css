@@ -160,7 +160,7 @@ figcaption {
 footer {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    background-color: rgba(var(--cerulean), 1);
+    background-color: rgba(var(--cerulean), 0.8);
     color: rgba(var(--ecru), 1);
     padding: 20px;
     text-align: center;
@@ -184,3 +184,82 @@ footer p {
     margin: 0;
     align-self: center;
 }
+
+/* Contact us */
+
+.top-container {
+    height: 250px; /* Increased height to accommodate text */
+    background-color: rgba(var(--cerulean), 0.2); /* Using ecru color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--black-olive);
+    font-size: 1.2em;
+    position: relative;
+    padding-bottom: 100px; /* Adjust padding to ensure text is not covered */
+}
+.top-container h1 {
+    color: rgba(var(--black-olive), 1)
+}
+.top {
+    max-width: 500px;
+
+}
+.mid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: space-around;
+    gap: 20px; /* Space between the boxes */
+    width: 100%;
+    margin: 0 auto; /* Center the container */
+    position: relative;
+    z-index: 1;
+}
+.inner-box {
+    border: 3px solid hsla(55, 64%, 19%, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px; /* Total height including protruding part */
+    position: relative;
+    top: -100px; /* Adjust to overlap the top-container */
+    background-color: #fff; /* Optional: to make the overlap visible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.inner-box p {
+    margin: 0 0 20px 0;
+}
+
+.inner-box p:last-of-type {
+    margin-top: 0;
+}
+
+.inner-box button {
+    background-color: rgba(var(--cerulean), 0.8); /* Using cerulean color */
+    border: none;
+    border-radius: 10px; /* Adjusted border radius */
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.inner-box button:hover {
+    background-color: rgba(var(--cerulean), 1); /* Darker on hover */
+}
+
+.bottom-container {
+    display: grid;
+    grid-template-columns: 1fr, 2fr;
+    background-color: rgba(var(--air-force-blue), 0.2); /* Using air-force-blue color */   
+    color: var(--ecru);
+    font-size: 1.2em;
+    padding-top: 100px; /* Adjust padding to ensure text is not covered */
+}
+.bo
