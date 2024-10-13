@@ -215,6 +215,7 @@ footer p {
     margin: 0 auto; /* Center the container */
     position: relative;
     z-index: 1;
+    
 }
 .inner-box {
     border: 3px solid hsla(55, 64%, 19%, 0.1);
@@ -256,10 +257,22 @@ footer p {
 
 .bottom-container {
     display: grid;
-    grid-template-columns: 1fr, 2fr;
-    background-color: rgba(var(--air-force-blue), 0.2); /* Using air-force-blue color */   
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(var(--air-force-blue), 0.2); /* Using air-force-blue color */ 
+    justify-content: space-around; 
+    gap: 1rem; 
     color: var(--ecru);
     font-size: 1.2em;
-    padding-top: 100px; /* Adjust padding to ensure text is not covered */
+    padding: 100px 50px; /* Adjust padding to ensure text is not covered */
 }
-.bo
+.map {
+    grid-column: span 2;
+}
+.team {
+    grid-column: span 3;
+    
+}
+.members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
