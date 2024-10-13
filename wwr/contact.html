@@ -6,7 +6,9 @@
     <meta name="description" content="Get in touch with us for any inquiries, bookings, or support. Our team is here to assist you with all your questions about our white water rafting adventures. Contact us today for more information and to plan your next thrilling experience on the river.">
     <meta name="author" content="Brighton Dube">
     <title>Rapid Adventure - Contact Us</title>
-    <link href="styles/rafting.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="styles/rafting.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -28,68 +30,100 @@
     </header>
     <main>
        <section>
-        <div class="top-container">
-            <div class="top">
-                <h1>Reach Our Team</h1>
-                <p>We love questions and feedback - and we're always happy to help! Here are some ways to contact us</p>
-            </div>
-        </div>
+           <div class="top-container">
+               <div class="top">
+                   <h1>Reach Our Team</h1>
+                   <p>We love questions and feedback - and we're always happy to help! Here are some ways to contact us</p>
+               </div>
+           </div>
        </section>
        <section>
-        <div class="mid-container">
-            <div class="inner-box">
-                <h3>Talk to Sales</h3>
-                <p>Chat with our sales team to discover how our product can work best for you.</p>
-                <p>+27-012-345-3445</p>
-            </div>
-            <div class="inner-box">
-                <h3>Contact Customer Support</h3>
-                <p>Chat with our sales team to discover how our product can work best for you.</p>
-                <button type="button" onclick="window.location.href='mailto:support@example.com'">Contact Support</button>
-            </div>
-        </div>
+           <div class="mid-container">
+               <div class="inner-box">
+                   <h3>Talk to Sales</h3>
+                   <p>Chat with our sales team to discover how our product can work best for you.</p>
+                   <p>+27-012-345-3445</p>
+               </div>
+               <div class="inner-box">
+                   <h3>Contact Customer Support</h3>
+                   <p>Chat with our sales team to discover how our product can work best for you.</p>
+                   <button type="button" onclick="window.location.href='mailto:support@example.com'">Contact Support</button>
+               </div>
+           </div>
        </section>
        <section>
-        <div class="bottom-container">
-            <div class="bottom">
-                <div class="contact-info">
-                    <h2>Headquarters</h2>
-                    <h4>Sandton, South Africa</h4>
-                    <p>177 Daisy Street&nbsp;</p>
-                    <p>Sandton</p>
-                    <p><br></p>
-                    <p>info@rapidadventures.com</p>
-                    <p><br></p>
-                    <p>+27-617-555-0108</p>
-                </div>
-            </div>
-            <div class="map">
-                <iframe
-                width="600"
-                height="450"
-                style="border:0"
-                loading="lazy"
-                allowfullscreen
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=143+Daisy+Street+Sandown">
-            </iframe>
-            </div> 
-        <div class="team">
-            <h2>Prefer a Local Sales Call?</h2>
-            <p> Call any of these numbers to raach a member of our global team. We'd love to hear from you.</p>
-            <h5>OUR TEAM</h5>
-            <div class="members">
-                
-                <div class="profile"><img src="images/member_profile.jpg" alt="Team member"><p>Caption</p><p>+27 045 452 2562</p></div>
-                <div class="profile"><img src="images/member_profile.jpg" alt="Team member"><p>Caption</p><p>+27 045 452 2562</p></div>
-                <div class="profile"><img src="images/member_profile.jpg" alt="Team member"><p>Caption</p><p>+27 045 452 2562</p></div>
-            
-            </div>
+           <div class="bottom-container">
+               <div class="contact-info">
+                   <h2>Headquarters</h2>
+                   <h4>Sandton, South Africa</h4>
+                   <p><i class="fas fa-map-marker-alt"></i> 177 Daisy Street&nbsp;</p>
+                   <p class="indent">Sandton </p> 
+                   <p><i class="fas fa-envelope"></i> info@rapidadventures.com</p>
+                   <p><i class="fas fa-phone"></i> +27-617-555-0108</p>
+                   
+               </div>
+               <div class="map">
+                   <iframe
+                       width="600"
+                       height="450"
+                       style="border:0"
+                       loading="lazy"
+                       allowfullscreen
+                       referrerpolicy="no-referrer-when-downgrade"
+                       src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=143+Daisy+Street+Sandown">
+                   </iframe>
+               </div>
+               <div class="team">
+                   <h2>Prefer a Local Sales Call?</h2>
+                   <p>Call any of these numbers to reach a member of our global team. We'd love to hear from you.</p>
+                   <h4>OUR TEAM</h4>
+                   <div class="members">
+                    <div class="profile">
+                        <img src="images/member1profile.jpg" alt="Team member">
+                        <p><strong>Emily Johnson</strong> - <em>Sales Manager</em></p>
+                        <p>Expert in planning your perfect rafting trip!</p>
+                        <button class="call-button" onclick="window.location.href='tel:+270454522562'">Call Emily</button>
+                    </div>
+                    
+                    <div class="profile">
+                        <img src="images/member2profile.jpg" alt="Team member">
+                        <p><strong>Michael Smith</strong> - <em>Customer Support</em></p>
+                        <p>Here to assist with all your inquiries.</p>
+                        <button class="call-button" onclick="window.location.href='tel:+270454522562'">Call Michael</button>
+                    </div>
+                    
+                    <div class="profile">
+                        <img src="images/member3profile.jpg" alt="Team member">
+                        <p><strong>Alex Brown</strong> - <em>Technical Support Expert</em></p>
+                        <p>Keeping our equipment top-notch!</p>
+                        <button class="call-button" onclick="window.location.href='tel:+270454522562'">Call Alex</button>
+                    </div>
+                    
+               </div>
+           </div>
+       </section>
+       <section>
+        <div class="form-container">
+            <h2>Send Us A Message</h2>
+            <p>Send us a message and we'll respond within 24 hours</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="radio" name="" id="">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
         </div>
        </section>
     </main>
     <footer>
-        <p>© 2024 Rapid Adventures <a href="https://app.moqups.com/kT9ByVOBHNHwBFgtpQD2FR9jNbFEOZYn/view/page/ad12de680"> Moqups Wireframe</a></p> 
+        <p>© 2024 Rapid Adventures <a href="https://app.moqups.com/kT9ByVOBHNHwBFgtpQD2FR9jNbFEOZYn/view/page/ad12de680">Moqups Wireframe</a></p>
         <div class="socials">
             <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook Logo"></a>
             <a href="https://twitter.com"><img src="images/x.png" alt="X logo"></a>
