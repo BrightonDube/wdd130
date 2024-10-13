@@ -372,3 +372,8 @@ footer p {
 .call-button:hover {
     background-color: rgba(var(--cerulean), 1);
 }
+.google-map {
+    width: 100%; /* Adjust width as needed */
+    height: 450px; /* Adjust height as needed */
+    border: 0;
+}
