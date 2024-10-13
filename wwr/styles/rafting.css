@@ -322,3 +322,53 @@ footer p {
 
 .call-button:hover {
     background-color: rgba(var(--cerulean), 1); /* Darker on hover */
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-row label {
+    min-width: 80px; /* Adjust as needed */
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row textarea {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid rgba(var(--cerulean), 0.8);
+    border-radius: 5px;
+}
+
+.align-checkbox {
+    flex-direction: row;
+    align-items: center;
+}
+
+.call-button {
+    background-color: rgba(var(--cerulean), 0.8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.call-button:hover {
+    background-color: rgba(var(--cerulean), 1);
+}
