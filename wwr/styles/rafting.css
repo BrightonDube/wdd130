@@ -352,3 +352,42 @@ footer p {
 .trip-table td {
     background-color: rgba(var(--white), 1);
 }
+
+/* About Page */
+.history-container {
+    display: flex;
+    align-items: center;
+}
+
+.history-item {
+    flex: 1 1 30%;
+    padding: 20px;
+    text-align: justify;
+}
+
+.history-img img {
+    width: 100%;
+    height: auto;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.adventure figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+    aspect-ratio: 1 / 1;
+}
+
+.adventure figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
