@@ -7,22 +7,31 @@
     --ecru: 216, 201, 155;
     --air-force-blue: 86, 142, 163;
     --cerulean: 66, 129, 164;
+    --white: 255, 255, 255;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: rgba(var(--black-olive), 1)
+    color: rgba(var(--black-olive), 1);
+}
+
+header, footer, .inner-box button, .call-button {
+    background-color: rgba(var(--cerulean), 0.8);
+    color: rgba(var(--white), 1);
+}
+
+header, main, footer {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 header {
-    margin: 1rem auto;
     display: grid;
     grid-template-columns: 120px 1fr 2fr;
     align-items: center;
-    color: rgba(var(--black-olive), 1);
-    max-width: 1000px;
+    margin: 1rem auto;
 }
 
 header img {
@@ -51,19 +60,13 @@ nav {
     flex: 1 1 100%;
 }
 
-header a,
-.navigation a {
-    color: var(--black-olive);
+header a, .navigation a, footer a {
+    color: rgba(var(--white), 1);
     text-decoration: none;
 }
 
 .navigation a {
     padding: 20px;
-}
-
-main {
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 .hero {
@@ -83,7 +86,8 @@ main {
     position: absolute;
     top: 10px;
     left: 0;
-    background-color: rgba(var(--ecru), 0.6);
+    background-color: rgba(var(--ecru), 0.8);
+    color: rgba(var(--black-olive), 1);
 }
 
 .hero article {
@@ -92,6 +96,7 @@ main {
     left: 0;
     padding: 20px;
     background-color: rgba(var(--air-force-blue), 0.8);
+    color: rgba(var(--white), 1);
 }
 
 .hero article img {
@@ -140,18 +145,18 @@ figure {
     padding: 5px;
     max-width: 220px;
     margin: auto;
-    aspect-ratio: 1 / 1; /* Ensures the figure is a square */
+    aspect-ratio: 1 / 1;
 }
 
 figure img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire figure without losing aspect ratio */
+    object-fit: cover;
 }
 
 figcaption {
     background-color: var(--black-olive);
-    color: rgba(var(--ecru), 0.6);
+    color: rgba(var(--ecru), 0.8);
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
@@ -160,8 +165,6 @@ figcaption {
 footer {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    background-color: rgba(var(--cerulean), 0.8);
-    color: rgba(var(--ecru), 1);
     padding: 20px;
     text-align: center;
 }
@@ -178,12 +181,6 @@ footer {
     margin-left: 10px;
 }
 
-footer a {
-    text-decoration: none;
-    margin: 0;
-    align-self: center;
-}
-
 footer p {
     margin: 0;
     align-self: center;
@@ -192,7 +189,7 @@ footer p {
 /* Contact us */
 .top-container {
     height: 250px;
-    background-color: rgba(var(--cerulean), 0.2); /* Using ecru color */
+    background-color: rgba(var(--cerulean), 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,7 +197,7 @@ footer p {
     color: var(--black-olive);
     font-size: 1.2em;
     position: relative;
-    padding-bottom: 100px; /* Adjust padding to ensure text is not covered */
+    padding-bottom: 100px;
 }
 
 .top-container h1 {
@@ -215,9 +212,9 @@ footer p {
     display: grid;
     grid-template-columns: repeat(2, 300px);
     justify-content: space-around;
-    gap: 20px; /* Space between the boxes */
+    gap: 20px;
     width: 100%;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto;
     position: relative;
     z-index: 1;
 }
@@ -227,10 +224,10 @@ footer p {
     border-radius: 10px;
     padding: 20px;
     width: 300px;
-    height: 300px; /* Total height including protruding part */
+    height: 300px;
     position: relative;
-    top: -100px; /* Adjust to overlap the top-container */
-    background-color: #fff;
+    top: -100px;
+    background-color: rgba(var(--white), 1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -246,31 +243,22 @@ footer p {
     margin-top: 0;
 }
 
-.inner-box button {
-    background-color: rgba(var(--cerulean), 0.8); /* Using cerulean color */
-    border: none;
-    border-radius: 10px; /* Adjusted border radius */
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.inner-box button:hover {
-    background-color: rgba(var(--cerulean), 1); /* Darker on hover */
+.inner-box button:hover, .call-button:hover {
+    background-color: rgba(var(--cerulean), 1);
 }
 
 .bottom-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: rgba(var(--air-force-blue), 0.2); /* Using air-force-blue color */
+    background-color: rgba(var(--air-force-blue), 0.2);
     justify-content: space-around;
     gap: 1rem;
     color: var(--ecru);
     font-size: 1.2em;
-    padding: 100px 20px; /* Adjust padding to ensure text is not covered */
+    padding: 100px 20px;
 }
 
-.contact-info h2{
+.contact-info h2 {
     text-align: start;
     margin-top: 0;
 }
@@ -286,6 +274,7 @@ footer p {
 .team {
     grid-column: span 3;
 }
+
 .team h4 {
     text-align: center;
     margin-bottom: 20px;
@@ -296,33 +285,31 @@ footer p {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
+
 .profile {
     text-align: center;
 }
+
 .fas {
-    color: rgba(var(--black-olive), 0.8); /* Directly setting the color for verification */
+    color: rgba(var(--black-olive), 0.8);
 }
+
 .profile img {
     width: 150px;
-    height: 150px; /* Ensures the image is a square */
-    border-radius: 50%; /* Rounds the image */
-    border: 2px solid #000; /* Adjust the color as needed */
-    padding: 2px; /* Adjust padding as needed */
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    padding: 2px;
 }
 
 .call-button {
-    background-color: rgba(var(--cerulean), 0.8); /* Using cerulean color */
-    color: white;
-    border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
-.call-button:hover {
-    background-color: rgba(var(--cerulean), 1); /* Darker on hover */
-}
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -342,7 +329,7 @@ footer p {
 }
 
 .form-row label {
-    min-width: 80px; /* Adjust as needed */
+    min-width: 80px;
 }
 
 .form-row input[type="text"],
@@ -359,21 +346,8 @@ footer p {
     align-items: center;
 }
 
-.call-button {
-    background-color: rgba(var(--cerulean), 0.8);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-bottom: 30px;
-}
-
-.call-button:hover {
-    background-color: rgba(var(--cerulean), 1);
-}
 .google-map {
-    width: 100%; /* Adjust width as needed */
-    height: 450px; /* Adjust height as needed */
+    width: 100%;
+    height: 450px;
     border: 0;
 }
