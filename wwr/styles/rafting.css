@@ -297,17 +297,17 @@ footer p {
     text-align: center;
 }
 
-.grid-layout {
+.outer-layout {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.grid-item {
+.inner-item {
     text-align: center;
 }
 
-.grid-item img {
+.inner-item img {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -318,11 +318,11 @@ footer p {
     padding: 20px;
 }
 
-.trip-descriptions .grid-layout {
+.trip-descriptions .outer-layout {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.trip-descriptions .grid-item img {
+.trip-descriptions .inner-item img {
     width: 100%;
     height: auto;
     border-radius: 10px;
