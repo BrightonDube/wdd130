@@ -18,7 +18,7 @@
 }
 
 header, footer, .inner-box button, .call-button {
-    background-color: rgba(var(--cerulean), 0.8);
+    background-color: rgba(var(--cerulean), 1);
     color: rgba(var(--white), 1);
 }
 
