@@ -408,6 +408,6 @@ footer p {
     width: 30%;
 
 }
-footer p {
+footer p, em {
     color: white;
 }
